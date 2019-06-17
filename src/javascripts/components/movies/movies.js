@@ -47,9 +47,10 @@ const movieBuilder = (movies) => {
     domString += `<h5 class="card-title">${movie.name}</h5>`;
     domString += `<img class="card-img-top" id="event-pic" src="${movie.imageUrl}" alt="Card image cap" />`;
     domString += `<p class="card-text">${movie.eventDate}</p>`;
-    domString += `<p class="card-text"> Locations:${movie.date}</p>`;
+    domString += `<p class="card-text"> Date of Movie:${movie.date}</p>`;
     domString += '<button type="button" id="clicks" class="btn btn-light editButton">edit</button>';
     domString += '<button type="button" id="click" class="btn btn-light deleteButton">delete</button>';
+    domString += '<button type="button" id="clicks" class="btn btn-light">movies watched</button>';
     domString += '</div>';
     // domString += '</div>';
   });
