@@ -1,0 +1,36 @@
+{
+    "movie1": {
+        "name": "Good Burger",
+        "movieRating": "G",
+        "imageUrl": "http://3.bp.blogspot.com/-paagmDwpwvg/T3EKh0hM1sI/AAAAAAAABWE/DP5n4fxDmXI/s1600/goodburger.jpg",
+        "date": "1997",
+        "id": "movie1",
+        "uid": "12345"
+    },
+    "movie2": {
+        "name": "Black Panther",
+        "movieRating": "PG-13",
+        "imageUrl": "http://bookmans.com/wp-content/uploads/2018/03/black-panther.jpg",
+        "date": "2018",
+        "id": "movie2",
+        "uid": "56789"
+    },
+    "movie3": {
+        "name": "Avengers:Endgame",
+        "movieRating": "PG-13",
+        "imageUrl": "https://godhatesgeeks.com/wp-content/uploads/2019/03/1099608.jpg",
+        "date": "2019",
+        "id": "movie3",
+        "uid": "90120"
+    },
+
+        "movie4": {
+            "name": "Friday",
+            "movieRating": "R",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg",
+            "date": "1995",
+            "id": "movie4",
+            "uid": "61788"
+        }
+    
+}
