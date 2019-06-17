@@ -40,6 +40,12 @@ const addMovie = () => {
   }
 };
 
+const watchList = (e) => {
+  const getCurrentId = e.target.closest('.eventCard').id;
+  console.error(getCurrentId);
+  document.getElementById('addWatchList').innerHTML.value('remove movie from watch list');
+};
+
 const movieBuilder = (movies) => {
   let domString = ' ';
   movies.forEach((movie) => {
@@ -50,12 +56,13 @@ const movieBuilder = (movies) => {
     domString += `<p class="card-text"> Date of Movie:${movie.date}</p>`;
     domString += '<button type="button" id="clicks" class="btn btn-light editButton">edit</button>';
     domString += '<button type="button" id="click" class="btn btn-light deleteButton">delete</button>';
-    domString += '<button type="button" id="clicks" class="btn btn-light">movies watched</button>';
+    domString += '<button type="button" id="addWatchList" class="btn btn-light eventCard">add movie to watch list</button>';
     domString += '</div>';
     // domString += '</div>';
   });
   util.printToDom('movie', domString);
   addMovie();
+  document.getElementById('addWatchList').addEventListener('click', watchList);
 };
 
 const getMovies = (uid) => {
